@@ -16,7 +16,7 @@ phases:
       - echo Pushing the Docker image to Amazon ECR...
       - docker push 381491984544.dkr.ecr.us-west-2.amazonaws.com/chaos-demo:latest
       - echo Writing image definitions file...
-      - printf '[{"name":"chaos-demo","imageUri":"381491984544.dkr.ecr.us-west-2.amazonaws.com/chaos-demo:latest"}]' > imagedefinitions.json
+      - printf '[{"name":"chaosDemoContainer","imageUri":"381491984544.dkr.ecr.us-west-2.amazonaws.com/chaos-demo:latest"}]' > imagedefinitions.json
 
 artifacts:
   files:
